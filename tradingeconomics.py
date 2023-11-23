@@ -10,21 +10,11 @@ from datetime import datetime
 import pytz
 import os
 
-print(os.listdir())
-
-lista_archivos = os.listdir()
-
-ruta_archivo_txt = 'salida.txt'
-
-with open(ruta_archivo_txt, 'w') as archivo_txt:
-    for elemento in lista_archivos:
-        archivo_txt.write(elemento + '\n')
-    
 
 argentina_timezone = pytz.timezone('America/Argentina/Buenos_Aires')
 utc_now = datetime.utcnow()
 argentina_now = utc_now.replace(tzinfo=pytz.utc).astimezone(argentina_timezone)
-formatted_date = argentina_now.strftime('%Y-%m')
+formatted_date = argentina_now.strftime('%Y-%m-%d')
 
 def getSoup(url):
     user_agents = [

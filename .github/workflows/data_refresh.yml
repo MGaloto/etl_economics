@@ -4,7 +4,7 @@ on:
   push:
     branches: [main, master]
   schedule:  
-    - cron: '0 19,03 1,9,12,20,22 * *' # el dia 1,9,12, 20 y 25 del mes a las 18 y 18 hs arg
+    - cron: '0 21 * * *' # el dia 1,9,12, 20 y 25 del mes a las 18 y 18 hs arg
     # - cron:  '0 */12 * * *'
     # cada doce horas '0 */12 * * *'
     # cada 10 min '*/10 * * * *'
