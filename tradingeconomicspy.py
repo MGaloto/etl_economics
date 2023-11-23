@@ -12,11 +12,13 @@ import os
 
 print(os.listdir())
 
+lista_archivos = os.listdir()
 
-folder_name = 'data_country'
-if not os.path.exists(folder_name):
-    os.makedirs(folder_name)
-    
+ruta_archivo_txt = 'salida.txt'
+
+with open(ruta_archivo_txt, 'w') as archivo_txt:
+    for elemento in lista_archivos:
+        archivo_txt.write(elemento + '\n')
     
 
 argentina_timezone = pytz.timezone('America/Argentina/Buenos_Aires')
@@ -135,7 +137,7 @@ df = pd.DataFrame(data)
 for country in df['country'].unique():
     country_df = df[df['country'] == country]
     country_df["date"] = formatted_date
-    file_name_country_df = os.path.join(folder_name, f"{country}.csv")
+    file_name_country_df = os.path.join('data_country', f"{country}.csv")
     
     if os.path.exists(file_name_country_df):
         existing_df = pd.read_csv(file_name_country_df)
