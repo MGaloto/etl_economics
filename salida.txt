@@ -1,0 +1,6 @@
+data_country
+docker
+tradingeconomics.py
+.git
+bash
+.github
