@@ -1,2 +1,3 @@
 country,gdp,gdp_growth,interest_rate,inflation_rate,jobless_rate,gov_budget,debt_gdp,current_account,population,date
 Turkey,906,3.5,35.0,61.36,9.1,-0.9,31.7,-5.3,85.28,2023-11-23
+Turkey,906,3.5,40.0,61.36,9.1,-0.9,31.7,-5.3,85.28,2023-11-23
