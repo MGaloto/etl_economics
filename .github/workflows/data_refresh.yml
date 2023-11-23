@@ -11,7 +11,7 @@ on:
 
 
 jobs:
-  refresh-the-dashboard:
+  update-data:
     runs-on: ubuntu-latest 
     permissions:
       contents: write
@@ -19,7 +19,7 @@ jobs:
       pages: write
 
     container: 
-      image: mgaloto/scrapppython:01
+      image: mgaloto/scrapppython:02
     steps:
     - name: checkout_repo
       uses: actions/checkout@v3
