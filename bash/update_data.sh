@@ -11,7 +11,7 @@ else
     echo "${LGREEN}Git user.email is: $2${LGREEN}"
 fi
 
-python tradingeconomics.py
+python main.py
 
 # Fix github issue
 git config --global --add safe.directory /__w/etl_economics/etl_economics
